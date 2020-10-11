@@ -3,6 +3,15 @@ import streamlit as st
 import pickle
 import numpy as np
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://previews.123rf.com/images/alexgrec/alexgrec1901/alexgrec190100463/116536866-credit-card-payment-with-close-up-shot-isolated-on-white-background-selective-focus-stack-of-credit-.jpg");
+background-size: cover;
+
+}
+</style>
+'''
 # Loading the saved Model
 model = pickle.load(open("final_model.pkl", "rb"))
 
