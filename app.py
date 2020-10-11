@@ -12,6 +12,8 @@ background-size: cover;
 }
 </style>
 '''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 # Loading the saved Model
 model = pickle.load(open("final_model.pkl", "rb"))
 
